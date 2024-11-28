@@ -52,6 +52,19 @@ def open_website(command):
     elif "facebook" in command:
         speak("Opening Facebook")
         webbrowser.open("https://www.facebook.com")
+    elif "new document" in command:
+        webbrowser.open("https://www.docs.new")
+    elif "documents" in command:
+        webbrowser.open("https://docs.google.com/document/u/0/")
+    elif "new slide" in command:
+        webbrowser.open("https://www.slides.new")
+    elif "slides" in command:
+        webbrowser.open("https://docs.google.com/presentation/u/0/")
+    elif "new spreadsheet" in command:
+        webbrowser.open("https://www.sheets.new")
+    elif "spreadsheet" in command:
+        webbrowser.open("https://docs.google.com/spreadsheets/u/0/")
+    
     else:
         speak("Sorry, I cannot open that website.")
 
